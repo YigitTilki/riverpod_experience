@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:riverpod_experience/todo_app.dart';
 
 void main() {
   runApp(
@@ -14,8 +15,9 @@ class RiverPodToDoApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Colors.red,
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: ToDoApp(),
     );
   }
 }
